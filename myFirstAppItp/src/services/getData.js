@@ -8,4 +8,3 @@ export const getText = () => {
       .then(result => result)
       .catch(error => console.log(error));
   };
-  

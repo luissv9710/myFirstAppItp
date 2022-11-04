@@ -1,11 +1,14 @@
-import {StyleSheet, Dimensions} from "react-native";
-import {background, primary} from "./colors";
+// Trabajo realizado en clase del 28 octubre 2022
+// -----------------------------------------------------
+import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
+import {background, primary} from './colors';
 
-const width = 50;
-const height = 50;
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
-  main: {
+  main:{
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -19,8 +22,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   item:{
-    width: width - 50, 
-    height: width - 50,
+    width: width - 30, 
+    height: width - 30,
   },
   txt:{
     fontSize: 18,
@@ -35,7 +38,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     margin: 15,
     padding: 15,
-  },    
+  },
 });
 
 export default styles;
