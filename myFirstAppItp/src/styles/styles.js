@@ -39,6 +39,10 @@ const styles = StyleSheet.create({
     margin: 15,
     padding: 15,
   },
+  description:{
+    color: 'blue',
+    fontSize: 18,
+  }
 });
 
 export default styles;
