@@ -1,6 +1,6 @@
 // Trabajo realizado en clase del 28 octubre 2022
+// Modificado 11 nov 2022
 // -----------------------------------------------------
-import {StyleSheet} from 'react-native';
 import {StyleSheet, Dimensions} from 'react-native';
 import {background, primary} from './colors';
 
@@ -21,10 +21,21 @@ const styles = StyleSheet.create({
     color: primary,
     fontSize: 18,
   },
-  item:{
-    width: width - 30, 
+  item: {
+    width: width - 30,
     height: width - 30,
+    resizeMode: 'cover',
+    backgroundColor: 'red',
   },
+  listimg: {
+    width: 100,
+    height: 100,
+    resizeMode: 'cover',
+    backgroundColor: 'red',
+  },
+  width100: {
+    width: '100%',
+  },   
   txt:{
     fontSize: 18,
     width: width - 30,
